@@ -198,7 +198,6 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Common.Models
         [JsonProperty("Cat")]
         public int? Cat { get; set; }
 
-
         /// <summary>
         /// Gets or sets the date and time on when the ticket is created on.
         /// </summary>
