@@ -191,6 +191,15 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Common.Models
         public int? Severity { get; set; }
 
         /// <summary>
+        /// Gets or sets status of the ticket.
+        /// </summary>
+        [IsSortable]
+        [IsFilterable]
+        [JsonProperty("Cat")]
+        public int? Cat { get; set; }
+
+
+        /// <summary>
         /// Gets or sets the date and time on when the ticket is created on.
         /// </summary>
         [JsonProperty("CreatedOn")]
