@@ -40,7 +40,7 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Cards
             var ticketAdditionalFields = new List<AdaptiveElement>();
             bool showTitleValidation = false;
             bool showDescriptionValidation = false;
-            bool showCategoryValidation = false
+            bool showCategoryValidation = false;
             bool showDateValidation = false;
 
             if (showValidationMessage)
