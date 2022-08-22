@@ -76,8 +76,8 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Common.Models
         /// Gets or sets the ticket category.
         /// </summary>
         [IsSearchable]
-        [JsonProperty("Category")]
-        public string Category { get; set; }
+        [JsonProperty("CategoryType")]
+        public string CategoryType { get; set; }
 
         /// <summary>
         /// Gets or sets the  UTC date and time the ticket was closed.
