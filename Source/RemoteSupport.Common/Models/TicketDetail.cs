@@ -172,7 +172,7 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Common.Models
         /// Gets or sets the severity of the ticketId.
         /// </summary>
         [JsonProperty("CategoryType")]
-        public string CateogryType { get; set; }
+        public string CateogoryType { get; set; }
 
         /// <summary>
         /// Gets or sets the conversation id of the thread pertaining to this ticket in the SME channel.
