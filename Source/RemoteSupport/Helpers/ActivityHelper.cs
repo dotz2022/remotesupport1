@@ -177,7 +177,7 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Helpers
                     break;
 
                 case ChangeTicketStatus.CategoryTypeAction:
-                    ticketDetail.Cat = (int)(TicketCat)Enum.Parse(typeof(TicketCat), payload.CategoryType);
+                    ticketData.Cat = (int)(TicketCat)Enum.Parse(typeof(TicketCat), payload.CategoryType);
                     ticketData.CategoryType = payload.CategoryType;
                     logger.LogInformation($"Received submit:  action={payload.CategoryType} ticketId={payload.TicketId}");
                     smeNotification = localizer.GetString("SmeSeverityStatus", ticketData.CategoryType, message.From.Name);
