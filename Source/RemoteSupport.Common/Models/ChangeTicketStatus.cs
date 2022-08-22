@@ -27,6 +27,11 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Common.Models
         public const string RequestTypeAction = "RequestType";
 
         /// <summary>
+        /// Action that relates to change in severity of an ticket.
+        /// </summary>
+        public const string CategoryTypeAction = "CateogryType";
+
+        /// <summary>
         /// Action that assigns a ticket to the person that performed the action.
         /// </summary>
         public const string AssignToSelfAction = "AssignToSelf";
@@ -47,6 +52,12 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Common.Models
         /// Gets or sets the severity of the ticketId.
         /// </summary>
         [JsonProperty("RequestType")]
+        public string RequestType { get; set; }
+
+        /// <summary>
+        /// Gets or sets the severity of the ticketId.
+        /// </summary>
+        [JsonProperty("Category")]
         public string RequestType { get; set; }
     }
 }

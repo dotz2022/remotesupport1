@@ -94,7 +94,7 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Cards
                             Value = Constants.CategoryThreeTextString,
                         },
                     },
-                    Id = "RequestType",
+                    Id = "CategoryType",
                     Style = AdaptiveChoiceInputStyle.Compact,
                 },
                 new AdaptiveTextBlock()

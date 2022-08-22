@@ -176,7 +176,7 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Helpers
                     userNotification = MessageFactory.Text(localizer.GetString("RequestActionTicketUserNotification", ticketData.TicketId));
                     break;
 
-                case ChangeTicketStatus.RequestTypeAction:
+                case ChangeTicketStatus.CategoryTypeAction
                     ticketDetail.Cat = (int)(TicketCat)Enum.Parse(typeof(TicketCat), payload.RequestType);
                     ticketData.RequestType = payload.RequestType;
                     logger.LogInformation($"Received submit:  action={payload.RequestType} ticketId={payload.TicketId}");
