@@ -64,13 +64,13 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Cards
                     issueDescription = ticketDetail.Description;
                 }
 
-                if (string.IsNullOrWhiteSpace(ticketDetail.CategoryType))
+                if (string.IsNullOrWhiteSpace(ticketDetail.Category))
                 {
                     showCategoryValidation = true;
                 }
                 else
                 {
-                    issueCategory = ticketDetail.CategoryType;
+                    issueCategory = ticketDetail.Category;
                 }
 
                 if (ticketDetail.IssueOccurredOn == null
@@ -121,7 +121,7 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Cards
                             Value = Constants.CategoryThreeTextString,
                         },
                     },
-                    Id = "CategoryType",
+                    Id = "RequestType",
                     Style = AdaptiveChoiceInputStyle.Compact,
                 },
                 new AdaptiveTextBlock()
@@ -274,7 +274,7 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Cards
                 CardHelper.GetAdaptiveCardColumnSet(localizer.GetString("RequestNumberText"), $"#{ticketDetail.RowKey}", localizer),
                 CardHelper.GetAdaptiveCardColumnSet(localizer.GetString("RequestTypeText"), ticketDetail.RequestType, localizer),
                 CardHelper.GetAdaptiveCardColumnSet(localizer.GetString("TitleDisplayText"), ticketDetail.Title, localizer),
-                CardHelper.GetAdaptiveCardColumnSet(localizer.GetString("RequestCategoryText"), ticketDetail.CategoryType, localizer),
+                CardHelper.GetAdaptiveCardColumnSet(localizer.GetString("RequestCategoryText"), ticketDetail.Category, localizer),
             });
             dynamicElements.AddRange(ticketAdditionalFields);
             dynamicElements.Add(CardHelper.GetAdaptiveCardColumnSet(localizer.GetString("DescriptionText"), ticketDetail.Description, localizer));
