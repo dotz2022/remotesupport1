@@ -74,6 +74,11 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Cards
 
             dynamicElements.AddRange(new List<AdaptiveElement>
             {
+                new AdaptiveTextBlock()
+                {
+                    Text = localizer.GetString("CategoryTypeText"),
+                    Spacing = AdaptiveSpacing.Medium,
+                },
                 new AdaptiveChoiceSetInput
                 {
                     Choices = new List<AdaptiveChoice>
