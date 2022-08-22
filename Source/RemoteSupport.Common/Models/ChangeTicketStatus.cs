@@ -57,7 +57,7 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Common.Models
         /// <summary>
         /// Gets or sets the severity of the ticketId.
         /// </summary>
-        [JsonProperty("Category")]
-        public string RequestType { get; set; }
+        [JsonProperty("CategoryType")]
+        public string CategoryType { get; set; }
     }
 }
