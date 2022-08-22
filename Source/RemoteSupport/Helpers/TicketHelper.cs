@@ -71,7 +71,7 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Helpers
             ticketDetail.LastModifiedByName = turnContext.Activity.From.Name;
             ticketDetail.LastModifiedByObjectId = turnContext.Activity.From.AadObjectId;
             ticketDetail.RequestType = taskModuleResponseValues.RequestType ?? TicketSeverity.Normal.ToString();
-            ticketDetail.CategoryType = taskModuleResponseValues.Category ?? TicketCat.Problem.ToString();
+            ticketDetail.CategoryType = taskModuleResponseValues.CategoryType ?? TicketCat.Problem.ToString();
             return ticketDetail;
         }
 
