@@ -76,8 +76,8 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Common.Models
         /// Gets or sets the ticket category.
         /// </summary>
         [IsSearchable]
-        [JsonProperty("CategoryType")]
-        public string CategoryType { get; set; }
+        [JsonProperty("Category")]
+        public string Category { get; set; }
 
         /// <summary>
         /// Gets or sets the  UTC date and time the ticket was closed.
@@ -167,6 +167,12 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Common.Models
         /// </summary>
         [JsonProperty("RequestType")]
         public string RequestType { get; set; }
+
+        /// <summary>
+        /// Gets or sets the severity of the ticketId.
+        /// </summary>
+        [JsonProperty("CategoryType")]
+        public string CateogryType { get; set; }
 
         /// <summary>
         /// Gets or sets the conversation id of the thread pertaining to this ticket in the SME channel.
